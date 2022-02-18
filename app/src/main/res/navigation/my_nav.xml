@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/cityListFragment">
+
+    <fragment
+        android:id="@+id/cityListFragment"
+        android:name="com.example.task1synergy.fragments.city.CityListFragment"
+        android:label="fragment_city_list"
+        tools:layout="@layout/fragment_city_list" >
+        <action
+            android:id="@+id/action_cityListFragment_to_cityWithLandmarkFragment"
+            app:destination="@id/cityWithLandmarkFragment" />
+        <action
+            android:id="@+id/action_cityListFragment_to_addCityFragment"
+            app:destination="@id/addCityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCityFragment"
+        android:name="com.example.task1synergy.fragments.city.AddCityFragment"
+        android:label="fragment_add_city"
+        tools:layout="@layout/fragment_add_city" >
+        <action
+            android:id="@+id/action_addCityFragment_to_cityListFragment"
+            app:destination="@id/cityListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityWithLandmarkFragment"
+        android:name="com.example.task1synergy.fragments.landmark.CityWithLandmarkFragment"
+        android:label="fragment_city_with_landmark"
+        tools:layout="@layout/fragment_city_with_landmark" >
+        <action
+            android:id="@+id/action_cityWithLandmarkFragment_to_addLandmarkFragment"
+            app:destination="@id/addLandmarkFragment" />
+        <action
+            android:id="@+id/action_cityWithLandmarkFragment_to_cityListFragment"
+            app:destination="@id/cityListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLandmarkFragment"
+        android:name="com.example.task1synergy.fragments.landmark.AddLandmarkFragment"
+        android:label="fragment_add_landmark"
+        tools:layout="@layout/fragment_add_landmark" >
+        <action
+            android:id="@+id/action_addLandmarkFragment_to_cityWithLandmarkFragment"
+            app:destination="@id/cityWithLandmarkFragment" />
+    </fragment>
+</navigation>
