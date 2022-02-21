@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.example.task1synergy.data.City
-import com.example.task1synergy.data.CityViewModel
+import com.example.task1synergy.model.City
+import com.example.task1synergy.model.CityViewModel
 import kotlinx.android.synthetic.main.fragment_add_city.*
 import kotlinx.android.synthetic.main.fragment_add_city.view.addCityButton
 import com.example.task1synergy.R

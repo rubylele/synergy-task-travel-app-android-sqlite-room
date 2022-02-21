@@ -1,7 +1,9 @@
-package com.example.task1synergy.data
+package com.example.task1synergy.repository
 
 
 import androidx.lifecycle.LiveData
+import com.example.task1synergy.model.Landmark
+import com.example.task1synergy.data.LandmarkDao
 
 class LandmarkRepository (private val landmarkDao: LandmarkDao){
 

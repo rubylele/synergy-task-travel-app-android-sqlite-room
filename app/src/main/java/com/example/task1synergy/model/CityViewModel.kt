@@ -1,9 +1,11 @@
-package com.example.task1synergy.data
+package com.example.task1synergy.model
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.task1synergy.data.CityDatabase
+import com.example.task1synergy.repository.CityRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

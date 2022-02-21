@@ -11,9 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_add_landmark.*
 import kotlinx.android.synthetic.main.fragment_add_landmark.view.addLandmarkButton
 import com.example.task1synergy.R
-import com.example.task1synergy.data.CityViewModel
-import com.example.task1synergy.data.Landmark
-import com.example.task1synergy.data.LandmarkViewModel
+import com.example.task1synergy.model.Landmark
+import com.example.task1synergy.model.LandmarkViewModel
 
 
 class AddLandmarkFragment : Fragment() {
@@ -46,7 +45,7 @@ class AddLandmarkFragment : Fragment() {
             //Add Data To Database
             mLandmarkViewModel.addLandmark(landmark)
         }else{
-            Toast.makeText(requireContext(), "Some empty fills here.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "You need write something!", Toast.LENGTH_SHORT).show()
         }
     }
 

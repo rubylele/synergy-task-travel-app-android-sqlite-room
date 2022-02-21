@@ -2,6 +2,7 @@ package com.example.task1synergy.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.task1synergy.model.Landmark
 
 @Dao
 interface LandmarkDao {

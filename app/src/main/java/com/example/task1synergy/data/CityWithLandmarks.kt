@@ -2,6 +2,8 @@ package com.example.task1synergy.data
 
 import androidx.room.Embedded
 import androidx.room.Relation
+import com.example.task1synergy.model.City
+import com.example.task1synergy.model.Landmark
 
 data class CityWithLandmarks(
     @Embedded val city: City,

@@ -1,4 +1,4 @@
-package com.example.task1synergy.data
+package com.example.task1synergy.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
