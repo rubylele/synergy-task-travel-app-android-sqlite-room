@@ -19,12 +19,12 @@ class CityWithLandmarkFragment : Fragment() {
         // Inflate the layout for this fragment
         val viewCityWithLandmarkList = inflater.inflate(R.layout.fragment_city_with_landmark, container, false)
 
+
+
         viewCityWithLandmarkList.addLandmarkFloatingButton.setOnClickListener {
             findNavController().navigate(R.id.action_landmarkFragment_to_addLandmarkFragment)
         }
 
         return viewCityWithLandmarkList
     }
-
-
 }
