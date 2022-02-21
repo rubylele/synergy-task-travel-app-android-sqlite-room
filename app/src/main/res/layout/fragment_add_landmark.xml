@@ -10,8 +10,8 @@
         android:id="@+id/landmarkNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="132dp"
         android:ems="10"
         android:hint="Enter landmark name"
         android:inputType="textPersonName"
@@ -19,12 +19,22 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <Button
+        android:id="@+id/addLandmarkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="20dp"
+        android:text="Add landmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landmarkDescriptionEditText" />
+
     <EditText
         android:id="@+id/landmarkDescriptionEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Enter landmark description"
         android:inputType="textPersonName"
@@ -32,13 +42,4 @@
         app:layout_constraintTop_toBottomOf="@+id/landmarkNameEditText"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/addLandmarkButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="30dp"
-        android:text="Add landmark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/landmarkDescriptionEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
