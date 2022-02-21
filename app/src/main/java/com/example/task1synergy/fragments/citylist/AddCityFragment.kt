@@ -1,4 +1,4 @@
-package com.example.task1synergy.fragments.city
+package com.example.task1synergy.fragments.citylist
 
 import android.os.Bundle
 import android.text.Editable

@@ -1,4 +1,4 @@
-package com.example.task1synergy.fragments.city
+package com.example.task1synergy.fragments.citylist
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -24,7 +24,7 @@ class CityListFragment : Fragment() {
             findNavController().navigate(R.id.action_cityListFragment_to_addCityFragment)
         }
         viewCityList.listCityWithLandmarkButton.setOnClickListener {
-            findNavController().navigate(R.id.action_addCityFragment_to_cityListFragment)
+            findNavController().navigate(R.id.action_cityListFragment_to_cityWithLandmarkFragment)
         }
 
         return viewCityList

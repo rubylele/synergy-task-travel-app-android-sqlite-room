@@ -32,7 +32,7 @@ class AddLandmarkFragment : Fragment() {
         }
 
 
-        return addLandmarkButton
+        return addLandmarkView
     }
 
     private fun insertDataToDatabase() {

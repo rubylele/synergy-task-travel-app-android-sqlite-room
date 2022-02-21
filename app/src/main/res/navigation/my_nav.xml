@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cityListFragment"
-        android:name="com.example.task1synergy.fragments.city.CityListFragment"
+        android:name="com.example.task1synergy.fragments.citylist.CityListFragment"
         android:label="fragment_city_list"
         tools:layout="@layout/fragment_city_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addCityFragment"
-        android:name="com.example.task1synergy.fragments.city.AddCityFragment"
+        android:name="com.example.task1synergy.fragments.citylist.AddCityFragment"
         android:label="fragment_add_city"
         tools:layout="@layout/fragment_add_city" >
         <action
