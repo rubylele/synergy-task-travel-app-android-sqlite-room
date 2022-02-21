@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 
 class CityRepository(private val cityDao: CityDao) {
 
-    val readAllData: LiveData<List<City>> = cityDao.readAllData()
+    val getCity: LiveData<List<City>> = cityDao.getCity()
 
     suspend fun addCity(city: City){
         cityDao.addCity(city)

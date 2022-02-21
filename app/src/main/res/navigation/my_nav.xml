@@ -32,7 +32,7 @@
         android:label="fragment_city_with_landmark"
         tools:layout="@layout/fragment_city_with_landmark" >
         <action
-            android:id="@+id/action_cityWithLandmarkFragment_to_addLandmarkFragment"
+            android:id="@+id/action_landmarkFragment_to_addLandmarkFragment"
             app:destination="@id/addLandmarkFragment" />
         <action
             android:id="@+id/action_cityWithLandmarkFragment_to_cityListFragment"

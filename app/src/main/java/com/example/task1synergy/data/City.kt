@@ -5,8 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "city_table")
 data class City(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val cityId: Int,
     val cityName: String,
     val cityDescription: String,
     val cityAge: Int

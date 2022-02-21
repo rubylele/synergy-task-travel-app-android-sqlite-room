@@ -12,7 +12,7 @@ interface CityDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addCity(city: City)
 
-    @Query("SELECT * FROM city_table ORDER BY id ASC")
-    fun readAllData(): LiveData<List<City>>
+    @Query("SELECT * FROM city_table ORDER BY cityId ASC")
+    fun getCity(): LiveData<List<City>>
 
 }
